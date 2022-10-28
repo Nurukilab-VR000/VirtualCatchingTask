@@ -35,7 +35,7 @@ public class CreateBall : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Task(102));
+        StartCoroutine(Task(100));
     }
 
     IEnumerator Task(int Num_Total)
@@ -44,7 +44,7 @@ public class CreateBall : MonoBehaviour
         System.Random rnd = new System.Random();
 
         //0～Number_Totalまで並べる
-        int[] data = new int[Num_Total - 1];
+        int[] data = new int[Num_Total];
 
         for (int i = 0; i < data.Length; i++)
         {

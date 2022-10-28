@@ -35,7 +35,7 @@ public class Create_VCTp_Ball : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Task(102));
+        StartCoroutine(Task(100));
     }
 
     IEnumerator Task(int Num_Total)
@@ -44,7 +44,7 @@ public class Create_VCTp_Ball : MonoBehaviour
         System.Random rnd = new System.Random();
 
         //0～Number_Totalまで並べる
-        int[] data = new int[Num_Total - 1];
+        int[] data = new int[Num_Total];
 
         for (int i = 0; i < data.Length; i++)
         {
@@ -66,8 +66,8 @@ public class Create_VCTp_Ball : MonoBehaviour
 
         for (int Num = 0; Num < Num_Total; Num++)
         {
-            //int count = data[k] % 25 + 1;
-            int count = 1;
+            int count = data[k] % 25 + 1;
+
             UnityEngine.Debug.Log(count);
 
             //座標
@@ -75,12 +75,9 @@ public class Create_VCTp_Ball : MonoBehaviour
             float y = 1.3f;
             float z = 11.0f;
 
-
             //2.0f～5.0f遅延
-            yield return new WaitForSeconds(2.0f);
+            yield return new WaitForSeconds(UnityEngine.Random.Range(2.0f,5.0f));
 
-            //生成
-            //CSVSave(sw.ElapsedMilliseconds, "GenerateTime");　//CSV保存
             UnityEngine.Debug.Log("生成時間：" + Time.time);
 
             if (count == 1)
@@ -185,21 +182,5 @@ public class Create_VCTp_Ball : MonoBehaviour
             }
             k++;
         }
-    }
-
-    //CSV保存するための関数
-    private void CSVSave(long data, string fileName)
-    {
-        //ファイル書き込み
-        FileInfo fi;
-        DateTime now = DateTime.Now;
-        StreamWriter sw;
-
-        fi = new FileInfo(Application.dataPath + "/CSV/" + fileName + ".csv");
-        sw = fi.AppendText();
-        sw.Write("," + data);
-        sw.WriteLine("");
-        sw.Flush();
-        sw.Close();
     }
 }

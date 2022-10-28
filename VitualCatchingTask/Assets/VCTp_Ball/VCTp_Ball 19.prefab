@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 4557733461486126177}
   - component: {fileID: 9046172912843100778}
   - component: {fileID: 9018477315514757877}
-  - component: {fileID: 2429734411281952949}
   - component: {fileID: -1621658311829315507}
+  - component: {fileID: 2741813186604435355}
   m_Layer: 0
   m_Name: VCTp_Ball 19
   m_TagString: Untagged
@@ -139,19 +139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6d53879a52a104dafad2c888a11a2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2429734411281952949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2166037197097532078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b24856d880bbc3544881ebc0f4d6bde7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  endPos4: {fileID: 6546515843509406035, guid: cc80e365de71f0b4b9934d4c52f50db2, type: 3}
 --- !u!114 &-1621658311829315507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,3 +151,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4ab02e1821a214aa207f9764afbc7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Predict_Time: 0.4
+--- !u!114 &2741813186604435355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2166037197097532078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8ded167e4187934db22dd33f2a9b372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endPos: {fileID: 6546515843509406035, guid: cc80e365de71f0b4b9934d4c52f50db2, type: 3}
+  speedRate: 1.75
