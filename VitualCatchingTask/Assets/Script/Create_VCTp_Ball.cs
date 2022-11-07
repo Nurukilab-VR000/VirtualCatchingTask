@@ -33,9 +33,21 @@ public class Create_VCTp_Ball : MonoBehaviour
     public GameObject VCT_Ball24;   //GameObject取得
     public GameObject VCT_Ball25;   //GameObject取得
 
+    public float time_t;
+
     private void Start()
     {
         StartCoroutine(Task(100));
+    }
+    
+    private void Update()
+    {
+        if (Input.GetKeyUp (KeyCode.Return))
+        {
+            UnityEngine.Debug.Log(Time.time);
+            CSVSave(Time.time, "202211xx_RT_predict_xxxx");
+
+        }
     }
 
     IEnumerator Task(int Num_Total)
@@ -60,25 +72,21 @@ public class Create_VCTp_Ball : MonoBehaviour
             data[j] = tmp;
         }
 
-        var sw = new System.Diagnostics.Stopwatch(); //StopWatch
-        TimeSpan ts = sw.Elapsed;
-        sw.Start();
-
         for (int Num = 0; Num < Num_Total; Num++)
         {
             int count = data[k] % 25 + 1;
-
-            UnityEngine.Debug.Log(count);
 
             //座標
             float x = 0.0f;
             float y = 1.3f;
             float z = 11.0f;
 
-            //2.0f～5.0f遅延
-            yield return new WaitForSeconds(UnityEngine.Random.Range(2.0f,5.0f));
+            float time = UnityEngine.Random.Range(2.0f, 5.0f);
+            time_t += time;
+            CSVSave2(time_t, "202211xx_RT_predict_xxxx");
 
-            UnityEngine.Debug.Log("生成時間：" + Time.time);
+            //2.0f～5.0f遅延
+            yield return new WaitForSeconds(time);
 
             if (count == 1)
             {
@@ -182,5 +190,35 @@ public class Create_VCTp_Ball : MonoBehaviour
             }
             k++;
         }
+    }
+
+    //CSV保存するための関数
+    private void CSVSave(float data, string fileName)
+    {
+        //ファイル書き込み
+        FileInfo fi;
+        DateTime now = DateTime.Now;
+        StreamWriter sw;
+
+        fi = new FileInfo(Application.dataPath + "/CSV/" + fileName + ".csv");
+        sw = fi.AppendText();
+        sw.WriteLine("," + data);
+        sw.Flush();
+        sw.Close();
+    }
+
+    //CSV保存するための関数
+    private void CSVSave2(float data, string fileName)
+    {
+        //ファイル書き込み
+        FileInfo fi;
+        DateTime now = DateTime.Now;
+        StreamWriter sw;
+
+        fi = new FileInfo(Application.dataPath + "/CSV/" + fileName + ".csv");
+        sw = fi.AppendText();
+        sw.WriteLine(data);
+        sw.Flush();
+        sw.Close();
     }
 }
