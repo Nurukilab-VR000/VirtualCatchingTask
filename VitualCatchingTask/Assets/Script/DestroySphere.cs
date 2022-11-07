@@ -20,8 +20,17 @@ public class DestroySphere : MonoBehaviour
 
     }
 
+    //Predict課題のみオンにする
+    /*
+    private void OnDestroy()
+    {
+        CSVSave2(Time.time, "2022xxxx_RO_xxxx");
+    }
+    */
+    
+
     //CSV保存するための関数
-    private void CSVSave(string name ,float data, string fileName)
+    private void CSVSave(string name, float data, string fileName)
     {
         //ファイル書き込み
         FileInfo fi;
@@ -30,7 +39,22 @@ public class DestroySphere : MonoBehaviour
 
         fi = new FileInfo(Application.dataPath + "/CSV/" + fileName + ".csv");
         sw = fi.AppendText();
-        sw.Write(","+ name + "," + data);
+        sw.Write("," + name + "," + data);
+        sw.WriteLine();
+        sw.Flush();
+        sw.Close();
+    }
+
+    private void CSVSave2(float data, string fileName)
+    {
+        //ファイル書き込み
+        FileInfo fi;
+        DateTime now = DateTime.Now;
+        StreamWriter sw;
+
+        fi = new FileInfo(Application.dataPath + "/CSV/" + fileName + ".csv");
+        sw = fi.AppendText();
+        sw.Write("," + name + "," + data);
         sw.WriteLine();
         sw.Flush();
         sw.Close();
