@@ -21,12 +21,11 @@ public class DestroySphere : MonoBehaviour
     }
 
     //Predict課題のみオンにする
-    /*
+
     private void OnDestroy()
     {
         CSVSave2(Time.time, "2022xxxx_RO_xxxx");
     }
-    */
     
 
     //CSV保存するための関数
