@@ -42,10 +42,38 @@ public class Create_VCTp_Ball : MonoBehaviour
     
     private void Update()
     {
-        if (Input.GetKeyUp (KeyCode.Return))
+        if (Input.GetKeyUp (KeyCode.Keypad8))
         {
             UnityEngine.Debug.Log(Time.time);
-            CSVSave(Time.time, "202211xx_RT_predict_xxxx");
+            CSVSave(8,Time.time, "202211xx_RT_predict_xxxx");
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.Keypad4))
+        {
+            UnityEngine.Debug.Log(Time.time);
+            CSVSave(4,Time.time, "202211xx_RT_predict_xxxx");
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.Keypad5))
+        {
+            UnityEngine.Debug.Log(Time.time);
+            CSVSave(5,Time.time, "202211xx_RT_predict_xxxx");
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.Keypad6))
+        {
+            UnityEngine.Debug.Log(Time.time);
+            CSVSave(6,Time.time, "202211xx_RT_predict_xxxx");
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.Keypad2))
+        {
+            UnityEngine.Debug.Log(Time.time);
+            CSVSave(2,Time.time, "202211xx_RT_predict_xxxx");
 
         }
     }
@@ -193,7 +221,7 @@ public class Create_VCTp_Ball : MonoBehaviour
     }
 
     //CSV保存するための関数
-    private void CSVSave(float data, string fileName)
+    private void CSVSave(int num, float data, string fileName)
     {
         //ファイル書き込み
         FileInfo fi;
@@ -202,7 +230,7 @@ public class Create_VCTp_Ball : MonoBehaviour
 
         fi = new FileInfo(Application.dataPath + "/CSV/" + fileName + ".csv");
         sw = fi.AppendText();
-        sw.WriteLine("," + data);
+        sw.WriteLine(num + "," + data);
         sw.Flush();
         sw.Close();
     }
@@ -217,7 +245,7 @@ public class Create_VCTp_Ball : MonoBehaviour
 
         fi = new FileInfo(Application.dataPath + "/CSV/" + fileName + ".csv");
         sw = fi.AppendText();
-        sw.WriteLine(data);
+        sw.WriteLine("," +","+ data);
         sw.Flush();
         sw.Close();
     }
