@@ -1,3 +1,0 @@
-# VirtualCatchingTask
-
-# 仕様
