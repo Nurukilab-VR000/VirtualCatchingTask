@@ -8,14 +8,13 @@ using System.IO;
 public class fade_ball : MonoBehaviour
 {
     MeshRenderer mesh;
-    [SerializeField] private float Predict_Time = 0.4f;
+    [SerializeField] private float Predict_Time;
 
     // Start is called before the first frame update
     void Start()
     {
         mesh = GetComponent<MeshRenderer>();
         StartCoroutine("Break_Ball");
-        //StartCoroutine("Fade_Ball");
     }
 
     IEnumerator Break_Ball()

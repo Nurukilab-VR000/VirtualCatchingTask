@@ -1,0 +1,100 @@
+ENDPOS1 (UnityEngine.Transform),1,Controller (right),3.233333
+ENDPOS3 (UnityEngine.Transform),1.25,Controller (right),6.755556
+ENDPOS2 (UnityEngine.Transform),1.75,ENDPOS2,8.855556
+ENDPOS2 (UnityEngine.Transform),1.25,Controller (right),12.25556
+ENDPOS5 (UnityEngine.Transform),1.25,Controller (right),15.15556
+ENDPOS2 (UnityEngine.Transform),1,Controller (right),18.61111
+ENDPOS2 (UnityEngine.Transform),1,Controller (right),22.63333
+ENDPOS5 (UnityEngine.Transform),1.5,Controller (right),25.85556
+ENDPOS4 (UnityEngine.Transform),1,Controller (right),30.51111
+ENDPOS2 (UnityEngine.Transform),2,Controller (right),32.84444
+ENDPOS2 (UnityEngine.Transform),1.75,ENDPOS2,35.04445
+ENDPOS4 (UnityEngine.Transform),1.5,ENDPOS4,38.4
+ENDPOS3 (UnityEngine.Transform),1.25,Controller (right),40.88889
+ENDPOS2 (UnityEngine.Transform),2,Controller (right),43.57778
+ENDPOS1 (UnityEngine.Transform),1,Controller (right),46.65556
+ENDPOS2 (UnityEngine.Transform),1.5,Controller (right),50.11111
+ENDPOS4 (UnityEngine.Transform),2,ENDPOS4,52.22223
+ENDPOS5 (UnityEngine.Transform),2,ENDPOS5,56.08889
+ENDPOS2 (UnityEngine.Transform),1.5,ENDPOS2,59.32222
+ENDPOS1 (UnityEngine.Transform),1.25,Controller (right),63.05556
+ENDPOS3 (UnityEngine.Transform),1.5,Controller (right),67.28889
+ENDPOS5 (UnityEngine.Transform),1,Controller (right),70.72222
+ENDPOS3 (UnityEngine.Transform),1.75,ENDPOS3,73.98889
+ENDPOS2 (UnityEngine.Transform),1.75,ENDPOS2,77.24445
+ENDPOS2 (UnityEngine.Transform),1.25,Controller (right),81.27778
+ENDPOS1 (UnityEngine.Transform),2,ENDPOS1,83.98889
+ENDPOS3 (UnityEngine.Transform),1.75,Controller (right),86.3
+ENDPOS3 (UnityEngine.Transform),1,Controller (right),88.77778
+ENDPOS5 (UnityEngine.Transform),1,Controller (right),91.51112
+ENDPOS4 (UnityEngine.Transform),1.25,Controller (right),95.95556
+ENDPOS1 (UnityEngine.Transform),1.75,Controller (right),100.4889
+ENDPOS5 (UnityEngine.Transform),1.75,Controller (right),104.2222
+ENDPOS1 (UnityEngine.Transform),1.5,Controller (right),108.7111
+ENDPOS1 (UnityEngine.Transform),1.75,Controller (right),110.8222
+ENDPOS1 (UnityEngine.Transform),1.5,Controller (right),114.6111
+ENDPOS5 (UnityEngine.Transform),1.5,Controller (right),119.4445
+ENDPOS5 (UnityEngine.Transform),2,Controller (right),123.4222
+ENDPOS3 (UnityEngine.Transform),1.75,ENDPOS3,127
+ENDPOS3 (UnityEngine.Transform),2,ENDPOS3,131.2444
+ENDPOS3 (UnityEngine.Transform),1,Controller (right),134.2111
+ENDPOS5 (UnityEngine.Transform),1.75,ENDPOS5,136.1445
+ENDPOS3 (UnityEngine.Transform),1.5,Controller (right),139.5222
+ENDPOS5 (UnityEngine.Transform),2,Controller (right),143.6889
+ENDPOS4 (UnityEngine.Transform),1.5,ENDPOS4,147.4556
+ENDPOS5 (UnityEngine.Transform),1.25,Controller (right),150.5556
+ENDPOS3 (UnityEngine.Transform),1.5,Controller (right),155.1445
+ENDPOS4 (UnityEngine.Transform),2,ENDPOS4,157.2667
+ENDPOS4 (UnityEngine.Transform),1.75,ENDPOS4,159.7778
+ENDPOS4 (UnityEngine.Transform),1,ENDPOS4,164.7
+ENDPOS5 (UnityEngine.Transform),1,Controller (right),168.8556
+ENDPOS5 (UnityEngine.Transform),1.5,Controller (right),172.8667
+ENDPOS4 (UnityEngine.Transform),2,ENDPOS4,176.1667
+ENDPOS1 (UnityEngine.Transform),1.75,Controller (right),178.3111
+ENDPOS1 (UnityEngine.Transform),2,Controller (right),182.6667
+ENDPOS2 (UnityEngine.Transform),1.25,Controller (right),185.9333
+ENDPOS2 (UnityEngine.Transform),1.25,Controller (right),187.9444
+ENDPOS1 (UnityEngine.Transform),2,ENDPOS1,191.0444
+ENDPOS1 (UnityEngine.Transform),1.25,Controller (right),193.3889
+ENDPOS2 (UnityEngine.Transform),1.5,Controller (right),196.2778
+ENDPOS3 (UnityEngine.Transform),1.25,Controller (right),198.4333
+ENDPOS3 (UnityEngine.Transform),2,ENDPOS3,202.4889
+ENDPOS4 (UnityEngine.Transform),1.75,ENDPOS4,205.8222
+ENDPOS1 (UnityEngine.Transform),1.75,Controller (right),210.4
+ENDPOS3 (UnityEngine.Transform),1.25,Controller (right),215.4889
+ENDPOS5 (UnityEngine.Transform),1.5,Controller (right),217.6333
+ENDPOS4 (UnityEngine.Transform),1.25,ENDPOS4,220.8333
+ENDPOS1 (UnityEngine.Transform),1,Controller (right),225.2111
+ENDPOS1 (UnityEngine.Transform),1,Controller (right),228.1889
+ENDPOS5 (UnityEngine.Transform),1,ENDPOS5,233.1889
+ENDPOS4 (UnityEngine.Transform),1,ENDPOS4,236.6
+ENDPOS1 (UnityEngine.Transform),2,Controller (right),239.0333
+ENDPOS2 (UnityEngine.Transform),1.5,Controller (right),241.5111
+ENDPOS4 (UnityEngine.Transform),2,ENDPOS4,244.3556
+ENDPOS4 (UnityEngine.Transform),1,ENDPOS4,248.4333
+ENDPOS5 (UnityEngine.Transform),1.25,Controller (right),250.5111
+ENDPOS3 (UnityEngine.Transform),1,Controller (right),255.0444
+ENDPOS2 (UnityEngine.Transform),2,ENDPOS2,259
+ENDPOS4 (UnityEngine.Transform),1.5,ENDPOS4,262.4333
+ENDPOS3 (UnityEngine.Transform),1.5,Controller (right),267.3556
+ENDPOS5 (UnityEngine.Transform),2,ENDPOS5,272.0889
+ENDPOS3 (UnityEngine.Transform),1,Controller (right),275.6111
+ENDPOS3 (UnityEngine.Transform),2,ENDPOS3,277.9556
+ENDPOS2 (UnityEngine.Transform),1,Controller (right),282.7333
+ENDPOS2 (UnityEngine.Transform),2,Controller (right),285.1222
+ENDPOS5 (UnityEngine.Transform),1.75,Controller (right),288.6778
+ENDPOS2 (UnityEngine.Transform),1,Controller (right),293.7444
+ENDPOS4 (UnityEngine.Transform),1.25,ENDPOS4,296.5222
+ENDPOS5 (UnityEngine.Transform),1.75,ENDPOS5,300.9111
+ENDPOS3 (UnityEngine.Transform),2,ENDPOS3,303.6
+ENDPOS3 (UnityEngine.Transform),1.75,Controller (right),307.2556
+ENDPOS4 (UnityEngine.Transform),1.75,ENDPOS4,310.5445
+ENDPOS4 (UnityEngine.Transform),1.25,ENDPOS4,315.1778
+ENDPOS1 (UnityEngine.Transform),1.25,Controller (right),318.9
+ENDPOS4 (UnityEngine.Transform),1.5,ENDPOS4,322.0889
+ENDPOS1 (UnityEngine.Transform),1.5,Controller (right),326.6556
+ENDPOS1 (UnityEngine.Transform),1.5,Controller (right),330.2556
+ENDPOS1 (UnityEngine.Transform),1.25,Controller (right),334.2444
+ENDPOS2 (UnityEngine.Transform),1.75,ENDPOS2,338.9889
+ENDPOS4 (UnityEngine.Transform),1.75,ENDPOS4,341.9222
+ENDPOS5 (UnityEngine.Transform),1.25,Controller (right),344.5111

@@ -9,103 +9,103 @@ public class BrokenSE : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if ((collision.gameObject.name == "VCT_Ball (1)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball1(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (2)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball2(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (3)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball3(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (4)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball4(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (5)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball5(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (6)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball6(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (7)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball7(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (8)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball8(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (9)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball9(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (10)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball10(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (11)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball11(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (12)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball12(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (13)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball13(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (14)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball14(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (15)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball15(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (16)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball16(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (17)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball17(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (18)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball18(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (19)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball19(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (20)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball20(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (21)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball21(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (22)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball22(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (23)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball23(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (24)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball24(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
-        if ((collision.gameObject.name == "VCT_Ball (26)(Clone)"))
+        if ((collision.gameObject.name == "P_Ball25(Clone)"))
         {
             AudioSource.PlayClipAtPoint(clip, transform.position);
         }
