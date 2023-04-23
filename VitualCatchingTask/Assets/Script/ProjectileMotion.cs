@@ -16,7 +16,7 @@ public class ProjectileMotion : MonoBehaviour
 
     void Start()
     {
-        int countEP = UnityEngine.Random.Range(0, 5);
+        int countEP = UnityEngine.Random.Range(0, 5); //EP = ENDPOS （終点）
         float speedRate = 1.0f;   //滞空時間を基準とした移動速度倍率
         float flightTime = 1.0f;  //滞空時間
 
