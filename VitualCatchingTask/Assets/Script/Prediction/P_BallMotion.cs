@@ -41,7 +41,6 @@ public class P_BallMotion : MonoBehaviour
     //CSV保存するための関数
     private void CSVSave(Transform EP, float SR, string fileName)
     {
-        //ファイル書き込み
         FileInfo fi;
         DateTime now = DateTime.Now;
         StreamWriter sw;

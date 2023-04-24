@@ -9,7 +9,6 @@ public class P_DestoryBall : MonoBehaviour
 {
     void OnCollisionEnter(Collision collision)
     {
-        // GenerateTimeDataを作って、CSVSaveの関数に引数として渡す
         var BrokenTimeData = Time.time;
         var CollisionObj = collision.gameObject.name;
 
@@ -28,7 +27,6 @@ public class P_DestoryBall : MonoBehaviour
     //CSV保存するための関数
     private void CSVSave(string name, float data, string fileName)
     {
-        //ファイル書き込み
         FileInfo fi;
         DateTime now = DateTime.Now;
         StreamWriter sw;
@@ -43,7 +41,6 @@ public class P_DestoryBall : MonoBehaviour
 
     private void CSVSave2(float data, string fileName)
     {
-        //ファイル書き込み
         FileInfo fi;
         DateTime now = DateTime.Now;
         StreamWriter sw;

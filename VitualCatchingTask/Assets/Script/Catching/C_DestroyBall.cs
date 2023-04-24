@@ -7,10 +7,9 @@ using System.IO;
 
 public class C_DestroyBall : MonoBehaviour
 {
-
+    //コントローラーとの衝突判定
     void OnCollisionEnter(Collision collision)
     {
-        // GenerateTimeDataを作って、CSVSaveの関数に引数として渡す
         var BrokenTimeData = Time.time;
         var CollisionObj = collision.gameObject.name;
 
@@ -23,7 +22,6 @@ public class C_DestroyBall : MonoBehaviour
     //CSV保存するための関数
     private void CSVSave(string name, float data, string fileName)
     {
-        //ファイル書き込み
         FileInfo fi;
         DateTime now = DateTime.Now;
         StreamWriter sw;
@@ -38,7 +36,6 @@ public class C_DestroyBall : MonoBehaviour
 
     private void CSVSave2(float data, string fileName)
     {
-        //ファイル書き込み
         FileInfo fi;
         DateTime now = DateTime.Now;
         StreamWriter sw;

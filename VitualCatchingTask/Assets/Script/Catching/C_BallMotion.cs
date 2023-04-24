@@ -7,10 +7,10 @@ using System.IO;
 public class C_BallMotion : MonoBehaviour
 {
     [SerializeField] Transform endPos;  //終点座標
-    [SerializeField] float speedRate = 1.0f;   //滞空時間を基準とした移動速度倍率
-    private float flightTime = 1.0f;  //滞空時間
+    [SerializeField] float flightTime = 1.0f;   //滞空時間
+    private float speedRate = 1.0f;  //滞空時間を基準とした移動速度倍率
     private const float gravity = -9.8f;    //重力
-    Transform EP;
+    Transform EP; //終点座標取得
 
     void Start()
     {
@@ -41,7 +41,6 @@ public class C_BallMotion : MonoBehaviour
     //CSV保存するための関数
     private void CSVSave(Transform EP,float SR, string fileName)
     {
-        //ファイル書き込み
         FileInfo fi;
         DateTime now = DateTime.Now;
         StreamWriter sw;

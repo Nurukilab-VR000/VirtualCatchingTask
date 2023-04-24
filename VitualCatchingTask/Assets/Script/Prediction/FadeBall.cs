@@ -5,7 +5,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 
-public class fade_ball : MonoBehaviour
+public class FadeBall : MonoBehaviour
 {
     MeshRenderer mesh;
     [SerializeField] private float Predict_Time = 0.4f;
