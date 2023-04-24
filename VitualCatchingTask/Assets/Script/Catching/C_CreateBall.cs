@@ -72,7 +72,7 @@ public class C_CreateBall : MonoBehaviour
             //ボールの生成座標
             float x = 0.0f;
             float y = 1.3f;
-            float z = 11.0f;
+            float z = 18.44f;
 
             //2.0f～5.0f遅延
             yield return new WaitForSeconds(UnityEngine.Random.Range(2.0f, 5.0f));

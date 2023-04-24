@@ -107,7 +107,7 @@ public class P_CreateBall : MonoBehaviour
             //座標
             float x = 0.0f;
             float y = 1.3f;
-            float z = 11.0f;
+            float z = 18.44f;
 
             float time = UnityEngine.Random.Range(2.0f, 5.0f);
             time_t += time;
