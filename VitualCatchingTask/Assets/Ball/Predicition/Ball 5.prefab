@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPos: {fileID: 4719105065638392620, guid: 309357328692b88439f482d49551bada, type: 3}
-  speedRate: 2
+  flightTime: 0.5
 --- !u!114 &-3400890865483473654
 MonoBehaviour:
   m_ObjectHideFlags: 0
