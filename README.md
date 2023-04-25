@@ -10,6 +10,8 @@
 
 "hoge"のセールスポイントや差別化などを説明する
 
+![image](https://user-images.githubusercontent.com/64608456/234149546-499a0809-0b59-43bd-88b3-04d1fffa3587.png)
+
 # Requirement
 
 "hoge"を動かすのに必要なライブラリなどを列挙する
