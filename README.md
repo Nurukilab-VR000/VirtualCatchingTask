@@ -14,8 +14,8 @@ In this study, we developed a system to evaluate catching aptitude and conducted
 
 "hoge"を動かすのに必要なライブラリなどを列挙する
 
-* huga 3.5.2
-* hogehuga 1.0.2
+* Unity 2019.4.18f1
+* SteamVR 
 
 # Installation
 
