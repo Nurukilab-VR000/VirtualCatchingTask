@@ -12,8 +12,6 @@ In this study, we developed a system to evaluate catching aptitude and conducted
 
 # Requirement
 
-"hoge"を動かすのに必要なライブラリなどを列挙する
-
 * Unity 2019.4.18f1
 * SteamVR 
 
