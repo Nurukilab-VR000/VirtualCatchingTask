@@ -45,35 +45,35 @@ public class P_CreateBall : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Keypad8))
         {
             UnityEngine.Debug.Log(Time.time);
-            CSVSave(8, Time.time, "PredicitonRT_2023xxxx");
+            CSVSave("ENDPOS4 (UnityEngine.Transform)", Time.time, "PredicitonRT_2023xxxx");
 
         }
 
         if (Input.GetKeyUp(KeyCode.Keypad4))
         {
             UnityEngine.Debug.Log(Time.time);
-            CSVSave(4, Time.time, "PredicitonRT_2023xxxx");
+            CSVSave("ENDPOS3 (UnityEngine.Transform)", Time.time, "PredicitonRT_2023xxxx");
 
         }
 
         if (Input.GetKeyUp(KeyCode.Keypad5))
         {
             UnityEngine.Debug.Log(Time.time);
-            CSVSave(5, Time.time, "PredicitonRT_2023xxxx");
+            CSVSave("ENDPOS1 (UnityEngine.Transform)", Time.time, "PredicitonRT_2023xxxx");
 
         }
 
         if (Input.GetKeyUp(KeyCode.Keypad6))
         {
             UnityEngine.Debug.Log(Time.time);
-            CSVSave(6, Time.time, "PredicitonRT_2023xxxx");
+            CSVSave("ENDPOS2 (UnityEngine.Transform)", Time.time, "PredicitonRT_2023xxxx");
 
         }
 
         if (Input.GetKeyUp(KeyCode.Keypad2))
         {
             UnityEngine.Debug.Log(Time.time);
-            CSVSave(2, Time.time, "PredicitonRT_2023xxxx");
+            CSVSave("ENDPOS5 (UnityEngine.Transform)", Time.time, "PredicitonRT_2023xxxx");
 
         }
     }
@@ -221,7 +221,7 @@ public class P_CreateBall : MonoBehaviour
     }
 
     //CSV保存するための関数
-    private void CSVSave(int num, float data, string fileName)
+    private void CSVSave(string num, float data, string fileName)
     {
         //ファイル書き込み
         FileInfo fi;
