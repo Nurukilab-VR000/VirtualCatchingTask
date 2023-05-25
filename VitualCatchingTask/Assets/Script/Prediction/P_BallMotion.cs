@@ -15,7 +15,7 @@ public class P_BallMotion : MonoBehaviour
     void Start()
     {
         EP = endPos;
-        CSVSave(endPos, speedRate, "Prediciton_2023xxxx");
+        CSVSave(endPos, flightTime, "Prediciton_2023xxxx");
         StartCoroutine(Jump(endPos.position, flightTime, speedRate, gravity));
     }
 

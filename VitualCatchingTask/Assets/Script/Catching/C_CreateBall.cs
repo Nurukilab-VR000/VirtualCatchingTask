@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
+using Valve.VR;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -33,9 +35,37 @@ public class C_CreateBall : MonoBehaviour
     public GameObject Ball24;   //GameObject取得
     public GameObject Ball25;   //GameObject取得
 
+    private Vector3 HMDPosition;  //HMDの位置座標格納用
+    private Quaternion HMDRotationQ;  //HMDの回転座標格納用（クォータニオン）
+    private Vector3 HMDRotation;  //HMDの回転座標格納用（オイラー角）
+
     private void Start()
     {
         StartCoroutine(Task(100));
+    }
+
+    private void Update()
+    {
+        /*InputTracking.GetLocalPosition(XRNode.機器名)で機器の位置や向きを呼び出せる*/
+
+        //Head（ヘッドマウンドディスプレイ）の情報を一時保管-----------
+        //位置座標を取得
+        HMDPosition = InputTracking.GetLocalPosition(XRNode.Head);
+        //回転座標をクォータニオンで値を受け取る
+        HMDRotationQ = InputTracking.GetLocalRotation(XRNode.Head);
+        //取得した値をクォータニオン → オイラー角に変換
+        HMDRotation = HMDRotationQ.eulerAngles;
+    }
+
+    IEnumerator GetHMDPos()
+    {
+        float elapsedTime = 0f;
+        while (elapsedTime < 1f)
+        {
+            CSVSave(HMDPosition.x, HMDPosition.y, HMDPosition.z, "HMDPos_2023xxxx");
+            yield return new WaitForSeconds(0.2f); // 0.2秒の遅延を設定する
+            elapsedTime += 0.2f;
+        }
     }
 
     IEnumerator Task(int Num_Total)
@@ -74,8 +104,10 @@ public class C_CreateBall : MonoBehaviour
             float y = 1.3f;
             float z = 11f;
 
-            //2.0f～5.0f遅延
-            yield return new WaitForSeconds(UnityEngine.Random.Range(2.0f, 5.0f));
+            //3.0f～6.0f遅延
+            yield return new WaitForSeconds(UnityEngine.Random.Range(3.0f, 6.0f));
+
+            StartCoroutine(GetHMDPos());
 
             //生成
             UnityEngine.Debug.Log("生成時間：" + Time.time);
@@ -184,8 +216,8 @@ public class C_CreateBall : MonoBehaviour
         }
     }
 
-    //CSV保存するための関数
-    private void CSVSave(long data, string fileName)
+    //CSV保存
+    private void CSVSave(float x, float y, float z, string fileName)
     {
         //ファイル書き込み
         FileInfo fi;
@@ -194,9 +226,10 @@ public class C_CreateBall : MonoBehaviour
 
         fi = new FileInfo(Application.dataPath + "/CSV/Catching/" + fileName + ".csv");
         sw = fi.AppendText();
-        sw.Write("," + data);
+        sw.Write("," + x + "," + y + "," + z);
         sw.WriteLine("");
         sw.Flush();
         sw.Close();
     }
+
 }
