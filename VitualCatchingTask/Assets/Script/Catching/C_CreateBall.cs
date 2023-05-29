@@ -64,7 +64,7 @@ public class C_CreateBall : MonoBehaviour
         {
             CSVSave(HMDPosition.x, HMDPosition.y, HMDPosition.z, "HMDPos_2023xxxx");
             yield return new WaitForSeconds(0.2f); // 0.2秒の遅延を設定する
-            elapsedTime += 0.2f;
+            elapsedTime += 0.03333333333f; //30フレーム
         }
     }
 
@@ -96,7 +96,7 @@ public class C_CreateBall : MonoBehaviour
 
         for (int Num = 0; Num < Num_Total; Num++)
         {
-            int count = data[k] % 25 + 1;
+            int count = data[k] % 25 + 1; 
             UnityEngine.Debug.Log(count);
 
             //ボールの生成座標

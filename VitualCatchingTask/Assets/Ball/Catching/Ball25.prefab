@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 494620621886441275}
   - component: {fileID: 2771174567636854258}
   - component: {fileID: 7259543856878433273}
-  - component: {fileID: 7214049373916844902}
   - component: {fileID: 6865796657961912701}
+  - component: {fileID: 8824384386288982339}
   m_Layer: 0
   m_Name: Ball25
   m_TagString: Untagged
@@ -130,18 +130,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7214049373916844902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520778889129777981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac6d53879a52a104dafad2c888a11a2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6865796657961912701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,3 +144,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endPos: {fileID: 7303821989844495543, guid: ef332cbd584122d4c8c7a553cc532fc5, type: 3}
   flightTime: 0.5
+--- !u!114 &8824384386288982339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520778889129777981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac7f73db9b8a204998b2c5d8d5183ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cnt: 1
