@@ -26,11 +26,23 @@ public class C_DestroyBall_Exception : MonoBehaviour
                 CSVSave(CollisionObj, Time.time, "Catching_2023xxxx");
                 Destroy(gameObject);
             }
+
+            if (collision.gameObject.tag == "Controller")
+            {
+                CSVSave(CollisionObj, Time.time, "Catching_2023xxxx");
+                Destroy(gameObject);
+            }
         }
 
         if (cnt == 1)
         {
             if (collision.gameObject.tag == "ENDPOS5")
+            {
+                CSVSave(CollisionObj, Time.time, "Catching_2023xxxx");
+                Destroy(gameObject);
+            }
+
+            if (collision.gameObject.tag == "Controller")
             {
                 CSVSave(CollisionObj, Time.time, "Catching_2023xxxx");
                 Destroy(gameObject);

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ENDPOS5
   - ENDPOS1
+  - Controller
   layers:
   - Default
   - TransparentFX
