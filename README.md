@@ -8,8 +8,8 @@ In this study, we developed a system to evaluate catching aptitude and conducted
 
 # Requirement
 
-* Unity 2019.4.18f1
-* SteamVR 
+* Unity 2022.1.23f1
+* SteamVR 2.1.4
 
 # Installation
 
